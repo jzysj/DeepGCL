@@ -1,3 +1,7 @@
+import pandas as pd
+import random
+import numpy as np
+import networkx as nx
 def load_data(G, val_ratio, test_ratio):#验证比例，测试比例
   
     """Read data from path, convert data into loader"""
