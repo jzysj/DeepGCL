@@ -90,7 +90,7 @@ def valid_con(model, device, drug1_loader_test,drug2_loader_test,drugs_loader_te
     AUC4= roc_auc_score(total_labels.numpy().flatten(),total_preds4.numpy().flatten())#只有一种标签       
     return  AUC2,AUC3, AUC4
   
- ef test_con(model, device, drug1_loader_test,drug2_loader_test,drugs_loader_test):
+ def test_con(model, device, drug1_loader_test,drug2_loader_test,drugs_loader_test):
     model.eval()
     total_labels = torch.Tensor()
     total_labels1 = torch.Tensor()
